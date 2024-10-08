@@ -15,7 +15,7 @@
 </template>
 
 <script setup>
-const props = defineProps(["productId", "isVisible"]); // Simplified prop definitions
+const props = defineProps(["productId", "isVisible"]);
 
 const emit = defineEmits(["deleteConfirmed", "close"]);
 
@@ -34,19 +34,19 @@ const cancelDelete = () => emit("close");
   left: 0;
   width: 100%;
   height: 100%;
-  background: rgba(0, 0, 0, 0.7); /* Dark overlay */
+  background: rgba(0, 0, 0, 0.7);
   display: flex;
   justify-content: center;
   align-items: center;
-  z-index: 1000; /* Ensure modal is on top */
+  z-index: 1000;
 }
 
 .modal-content {
-  background: white; /* Light background */
-  color: #333; /* Dark text color */
+  background: white;
+  color: #333;
   padding: 20px;
   border-radius: 8px;
-  width: 400px; /* Fixed width */
+  width: 400px;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
 }
 
@@ -58,12 +58,12 @@ const cancelDelete = () => emit("close");
 
 .close-icon {
   cursor: pointer;
-  font-size: 1.5em; /* Larger close icon */
-  color: #333; /* Color of the close icon */
+  font-size: 1.5em;
+  color: #333;
 }
 
 .close-icon:hover {
-  color: #ff0000; /* Change color on hover */
+  color: #ff0000;
 }
 
 .modal-footer {
@@ -73,28 +73,28 @@ const cancelDelete = () => emit("close");
 }
 
 .confirm {
-  margin-left: 10px; /* Space between buttons */
+  margin-left: 10px;
   padding: 8px 12px;
   border: none;
   border-radius: 4px;
-  background-color: #007bff; /* Bootstrap primary color */
+  background-color: #007bff;
   color: white;
 }
 
 .cancel {
-  margin-left: 10px; /* Space between buttons */
+  margin-left: 10px;
   padding: 8px 12px;
   border: none;
   border-radius: 4px;
-  background-color: #6c757d; /* Bootstrap secondary color */
+  background-color: #6c757d;
   color: white;
 }
 
 .confirm:hover {
-  background-color: #0056b3; /* Darker shade on hover */
+  background-color: #0056b3;
 }
 
 .cancel:hover {
-  background-color: #5a6268; /* Darker shade on hover */
+  background-color: #5a6268;
 }
 </style>

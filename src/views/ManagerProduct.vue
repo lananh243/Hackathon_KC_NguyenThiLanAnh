@@ -95,7 +95,6 @@ const handleEdit = (product) => {
   isShowForm.value = true;
 };
 
-// Update the product list
 const updateProductList = (newProduct) => {
   listProduct.value = [...listProduct.value, newProduct];
   localStorage.setItem("products", JSON.stringify(listProduct.value));

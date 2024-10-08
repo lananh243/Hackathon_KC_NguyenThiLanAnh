@@ -76,9 +76,9 @@ const { listProduct, productToEdit } = defineProps([
 ]);
 const emit = defineEmits(["onClose", "addProduct", "updateProduct"]);
 
-const isEditing = !!productToEdit; // Check if we are editing
+const isEditing = !!productToEdit;
 const newProduct = reactive({
-  id: productToEdit ? productToEdit.id : Math.floor(Math.random() * 100000000), // Use existing ID if editing
+  id: productToEdit ? productToEdit.id : Math.floor(Math.random() * 100000000),
   name: productToEdit ? productToEdit.name : "",
   price: productToEdit ? productToEdit.price : 0,
   quantity: productToEdit ? productToEdit.quantity : 0,
